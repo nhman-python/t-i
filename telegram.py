@@ -26,7 +26,7 @@ with Client('test',
             index += 1
             grop_info.setdefault(index, dialog.chat.id)
             index += 1
-            grop_info.setdefault(index, 'me')
+            grop_info.setdefault(index, 'me') # you can remove this line to remove your self from the list it for my test only
 
     for i, d in grop_info.items():
         print(i, d)
