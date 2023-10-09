@@ -14,4 +14,4 @@ pip install -r requirements.txt
 # הרץ את הסקריפט
 ```
 python3 telegram.py 
-``
+```
