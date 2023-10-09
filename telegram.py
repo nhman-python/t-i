@@ -1,10 +1,11 @@
 from pyrogram.client import Client
 from rich.prompt import IntPrompt
 import random
-
+import time
 api_hash = ''
 api_id = ''
 phone_number = '+972xxxx'
+
 
 def random_message():
     with open('fack_arab.txt', 'r') as file:
@@ -25,9 +26,6 @@ with Client('test',
             print(index, dialog.chat.title)
             index += 1
             grop_info.setdefault(index, dialog.chat.id)
-            index += 1
-            grop_info.setdefault(index, 'me') # you can remove this line to remove your self from the list it for my test only
-
     for i, d in grop_info.items():
         print(i, d)
 
@@ -38,3 +36,4 @@ with Client('test',
     if grop_to:
         for i in range(num_send + 1):
             client.send_message(grop_to, random_message() + "تحيا إسرائيل 🇮🇱")
+            time.sleep(2)
