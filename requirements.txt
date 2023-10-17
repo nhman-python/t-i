@@ -1,3 +1,4 @@
 pyrogram
 pyrogram-client
 rich
+tgcrypto
